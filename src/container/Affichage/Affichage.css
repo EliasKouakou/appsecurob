@@ -1,0 +1,53 @@
+.app__affichage{
+    /* background-color:rgb(206, 240, 235); */
+    background-color: var(--color-content);
+
+    height: 90vh;
+    width: var(--w);
+    /* width: 100%; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+    margin: 0 auto;
+    
+}
+
+ul.tree li {
+    list-style-type: none;
+    position: relative;
+    margin-left: 50px;
+}
+
+ul.tree li ul {
+    display: none;
+}
+
+ul.tree li.open > ul {
+    display: block;
+}
+
+ul.tree li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.tree li a:before {
+    height: 1em;
+    padding:0 .1em;
+    font-size: .8em;
+    display: block;
+    position: absolute;
+    left: -1.3em;
+    top: .2em;
+}
+
+ul.tree li > a:not(:last-child):before {
+    content: '+';
+
+}
+
+ul.tree li.open > a:not(:last-child):before {
+    content: '-';
+
+
+}

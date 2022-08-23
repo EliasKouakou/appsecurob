@@ -1,0 +1,63 @@
+.app__home{
+    background-color:rgb(255, 255, 255);
+    height: 90vh;
+    width: var(--w);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 20px;
+    
+}
+
+main{
+    padding-top: 100px;
+    /* background-color: green; */
+    display: inline-flex;
+    bottom: 100px;
+    top: 125px;
+    left: 0;
+    right: 0;
+    flex-grow: 1;
+}
+
+article{
+    background-color: white;
+    /* width: 100%; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+table{
+    width: 100%; 
+    border: 2px solid black;
+    margin:0 auto;
+    
+    
+}
+th{
+    border: 2px solid black;
+    margin: 0 0 0 0;
+    column-width:50px;
+}
+tr{
+    
+    max-height: 20px;
+}
+td{
+    height: fit-content;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+td:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+
+#applink{
+    /* background-color: var(--secondary-color); */
+    /* border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px; */
+}
+

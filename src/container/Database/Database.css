@@ -1,0 +1,62 @@
+.app__database{
+    /* background-color:rgb(206, 240, 235); */
+    background-color: var(--color-content);
+    height: 90vh;
+    width: var(--w);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+
+body,table,thead,tbody{
+    width: 100%;
+}
+th{
+    border: 2px solid black;
+    margin: 0 0 0 0;
+    column-gap: 0;
+    column-width:125px;
+}
+tr{
+    
+    max-height: 40px;
+}
+td{
+    height: fit-content;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+td:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+@media  screen and (max-width:480px) {
+    body{
+        font-size:x-large;
+    }
+}
+@media (orientation:portrait) {
+    body{
+        font-size:x-large;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    form {
+        max-width: var(--w);
+    
+    }
+
+
+    /* input[type="button"]{
+        max-width: 50px;
+    }
+    input[type="text"]{
+        max-width: 50px;
+    }
+     */
+}

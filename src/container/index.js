@@ -1,0 +1,5 @@
+export  {default as Selection } from './Selection/Selection'
+export  {default as Insertion } from './Insertion/Insertion'
+export  {default as Affichage } from './Affichage/Affichage'
+export  {default as Database } from './Database/Database'
+export  {default as Home } from './Home/Home'

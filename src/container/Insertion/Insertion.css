@@ -1,0 +1,33 @@
+.app__insertion{
+    background-color: var(--color-content);
+    height: 90vh;
+    max-width: var(--w);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.app_select_json{
+    float: left;left:0;position: absolute;top: 10px;
+}
+
+.app__insert{
+    max-width: 100%;display:grid;grid-template-columns:repeat(2,1fr);grid-row-gap:1em;grid-column-gap:1em;left:0;right:0;
+}
+
+@media screen and (max-width:900px) {
+    form {
+        max-width: var(--w);
+    
+    }
+    
+    form input{
+        max-width: 100px;
+    }
+    form textarea{
+        max-width: 150px;
+    }
+}
+

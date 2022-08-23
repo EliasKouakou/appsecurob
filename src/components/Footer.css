@@ -1,0 +1,43 @@
+.app__footer{
+
+    position: fixed;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    bottom: 0;
+    height: 5vh;
+    font-size: 14px;
+}
+
+.app__footer div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+@media screen and (max-width:900px)  {
+    .app__footer{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (orientation:'portrait') {
+    .app__footer{
+        font-size: 16px;
+    }
+}

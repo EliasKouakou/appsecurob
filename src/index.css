@@ -1,0 +1,77 @@
+
+
+
+@font-face {
+  font-family: Ralewaythin;
+  src: url(../public/assets/fonts/POLICES/POLICES/Raleway/Raleway/Raleway-Thin.ttf) format('truetype');
+
+}
+@font-face {
+  font-family: RalewayBlack;
+  src: url(../public/assets/fonts/POLICES/POLICES/Raleway/Raleway/Raleway-Black.ttf) format('truetype');
+
+}
+@font-face {
+  font-family: RalewayBold;
+  src: url(../public/assets/fonts/POLICES/POLICES/Raleway/Raleway/Raleway-Bold.ttf) format('truetype');
+
+}
+@font-face {
+  font-family: RalewayExtraLightItalic;
+  src: url(../public/assets/fonts/POLICES/POLICES/Raleway/Raleway/Raleway-ExtraLightItalic.ttf) format('truetype');
+
+}
+@font-face {
+  font-family: RalewayLight;
+  src: url(../public/assets/fonts/POLICES/POLICES/Raleway/Raleway/Raleway-Light.ttf) format('truetype');
+
+}
+@font-face {
+  font-family: RalewayMedium;
+  src: url(../public/assets/fonts/POLICES/POLICES/Raleway/Raleway/Raleway-Medium.ttf) format('truetype');
+
+}
+@font-face {
+  font-family: RalewayRegular;
+  src: url(../public/assets/fonts/POLICES/POLICES/Raleway/Raleway/Raleway-Regular.ttf) format('truetype');
+
+}
+@font-face {
+  font-family: RalewaySemiBold;
+  src: url(../public/assets/fonts/POLICES/POLICES/Raleway/Raleway/Raleway-SemiBold.ttf) format('truetype');
+
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: RalewayRegular;
+}
+:root{
+
+  /* couleur */
+
+  --color-content:#E6EDECff;
+  --primary-color:#66c1bf;
+  --secondary-color:#008c8e;
+  --tertiary-color:#275662;
+  --black:#000;
+  --white:#fff;
+  --c1:#9dc544;
+  --c2:#9ed6e3;
+  --c3:#423089;
+  --c4:#ed6e6c;
+  --c5:#797870;
+  --c6:#c4c0b3;
+
+  /* taille */
+  --w:90%;
+
+
+  /* font */
+  --f1:Raleway;
+
+}
+

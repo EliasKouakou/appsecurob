@@ -1,0 +1,14 @@
+{
+    "name":"MAHA app",
+    "short_name":"MAHA ",
+
+    "start_url":"/Home",
+    "background_color":"#6dcdb1",
+    "theme_color":"#66c1bf",
+    "display":"standalone",
+    "scope":".",
+    "icons":[
+        {"src":"assets/images/icon512x512.jpg","sizes":"512x512","type":"image/png"},
+        {"src":"assets/images/icon192x192.jpg","sizes":"192x192","type":"image/png"},
+        {"src":"assets/images/maskable_icon.png","sizes":"192x192","type":"image/png","purpose":"maskable"}]
+}

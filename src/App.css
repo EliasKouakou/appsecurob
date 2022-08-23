@@ -1,0 +1,29 @@
+body{
+  height: 100vh;
+  font-family: var(--f1)
+}
+
+.App {
+  text-align: center;
+  /* background-color: rgb(206, 240, 235); */
+  margin: 0 auto;
+  ;
+}
+
+
+.section{
+  min-height: 90vh;
+  min-width: var(--w);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* background-color: var(--color); */
+  background-color: var(--white);
+
+}
+
+
+#Affichage, #Selection, #Insertion, #Database,#Home{
+
+  padding-top: 5vh;
+}
