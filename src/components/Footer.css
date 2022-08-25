@@ -30,8 +30,9 @@ a:hover{
 }
 
 @media screen and (max-width:900px)  {
+
     .app__footer{
-        font-size: 10px;
+        font-size: 9px;
     }
     
 }

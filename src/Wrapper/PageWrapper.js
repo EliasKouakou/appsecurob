@@ -11,7 +11,9 @@ const PageWrapper = (Component,idName,classNames) => function HOC() {
         
         <Header active={idName}/>
         <Getjson/>
-        <br/>
+        <div className='space'>
+
+        </div>
         <Component/>
         <Footer/>
     </div >

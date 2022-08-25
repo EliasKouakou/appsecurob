@@ -2,11 +2,7 @@ import React, { useEffect,useRef } from 'react'
 import './Database.css'
 import { PageWrapper} from '../../Wrapper'
 import {url,ID,headers} from '../../Wrapper/Getjson/Getjson'
-// import {default as url}  from '../../Wrapper/Getjson/Getjson'
-// import {default as headers}  from '../../Wrapper/Getjson/Getjson'
-// import {default as ID}  from '../../Wrapper/Getjson/Getjson'
-// import {default as resources}  from '../../Wrapper/Getjson/Getjson'
-// import {default as json_server}  from '../../Wrapper/Getjson/Getjson'
+
 
 const defaultKeysOrder=['id','type1','type2','type3','type4','type5','type6','type7','exigence','source','date_du_jour']
 const Database = () => {
@@ -315,11 +311,8 @@ const Database = () => {
 
   return (
     <div className='app__database'>
-
-    
-          <br/>
         
-          <div style={{marginTop:'10px',overflow:'scroll',maxHeight:"70%",width: '100'}}>
+          <div style={{marginTop:'0px',overflow:'scroll',maxHeight:"70vh",width: '100%'}}>
               <table contentEditable={true} aria-expanded="true"  >
                 <thead >
                     

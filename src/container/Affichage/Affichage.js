@@ -186,7 +186,7 @@ const Display=(nested)=>{
       var tree=document.querySelectorAll('ul.tree a:not(:last-child)');
       for(var i = 0; i < tree.length; i++){
           tree[i].addEventListener('click', (e) => {
-              console.log(e.target);
+              // console.log(e.target);
               var parent = e.target.parentElement;
               var classList = parent.classList;
               if(classList.contains("open")) {
@@ -230,7 +230,7 @@ const Display=(nested)=>{
   return (
     <div className='app__affichage'>
 
-        <div className="content" style={{overflowY:'scroll',overflowX:'scroll',border:'1px solid black',width: '100%',minHeight:'75vh',justifyContent:'left',textAlign:'left',alignContent:'start'}}>
+        <div className="content" style={{overflowY:'scroll',overflowX:'scroll',border:'1px solid black',width: '100%',minHeight:'70vh',justifyContent:'left',textAlign:'left',alignContent:'start'}}>
         </div>
               
         <br/>

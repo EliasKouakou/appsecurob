@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 import { Getjson, PageWrapper } from '../../Wrapper'
-
+import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div className='app__home'>
@@ -9,7 +9,7 @@ const Home = () => {
             
             <article id="content">
 
-              <h1 style={{color:'var(--secondary-color)'}}>SecuRob</h1>
+              <Link to={"/Selection"}><h1 style={{color:'var(--secondary-color)'}}>SecuRob</h1></Link>
             
             <p>Une application destinée aux concepteurs de machines agricoles dans le cadre de la sécurisation des machines agricoles</p>
             <p>Télécharger la version desktop  de l'application <a href="#applink" style={{color:'var(--secondary-color)'}}>ici</a> </p>

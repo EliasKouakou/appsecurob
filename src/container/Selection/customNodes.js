@@ -1,37 +1,47 @@
-import React, {useCallback } from 'react';
+import React, {useCallback,useState } from 'react';
 import { Handle, Position } from 'react-flow-renderer';
-
+import ToggleButton from '@mui/material/ToggleButton';
 const handleStyle = { left: 10 };
 
+// function CustomNode({ data, isConnectable }) {
+ 
+
+//   const Return = useCallback((evt) => {
+//   }, []);
+//   return (
+//     <>
+//       <Handle type="target" position='left' isConnectable={isConnectable} />
+
+//       <div>
+//         <button id={data.label} title={data.Data} className={data.class} name='button' onClick={Return}  style={{ fontSize: 24, width: '350px' }} >
+//           {data.label}
+//         </button>
+//         {/* <div className='exigence' style={{display:'none',position:'absolute',width:'1000px',height:'200px',transform:'',backgroundColor:'white',color:'black',zIndex:10000}}>
+//           {data.Data}
+//         </div> */}
+        
+//       </div>
+//       <Handle type="source" position='right' isConnectable={isConnectable} />
+
+//     </>
+//   );
+// }
 function CustomNode({ data, isConnectable }) {
-  // function AddExi(parent,child){
-  //   if(typeof(nested[parent][child][Object.keys(nested[parent][child])[0]])!=typeof({'a':1})){
+ 
+  const [selected, setSelected] = React.useState(true);
 
-     
-  //      return (
-  //       <div className='exigences' style={{position:'sticky',width:'200px',height:'200px',transform:'translate(50%,50%)'}}>
-  //         {Object.entries(nested[parent][child]).join('\n\n')}
-  //       </div>
-  //      )
-     
-  //   }
-  // }
-
-  const Return = useCallback((evt) => {
-  }, []);
+  const Color=(data.color!='')?data.color:'white'
+  // console.log(Color)
   return (
     <>
       <Handle type="target" position='left' isConnectable={isConnectable} />
 
-      <div>
-        <button id={data.label} title={data.Data} className={data.class} name='button' onClick={Return}  style={{ fontSize: 24, width: '350px' }} >
+  
+        {/* <ToggleButton id={data.class} value={data.label} title={data.Data} className={data.class} name='button' onClick={()=>setClicked(!clicked)}  style={{ fontSize: 24, width: '350px',backgroundColor:'white',color:'black' }} disabled={data.disabled} > */}
+        <ToggleButton id={selected.toString()} value={data.label} title={data.class} name='button' onClick={()=>setSelected(!selected)}  sx={{ fontSize: 18, width: '350px',backgroundColor:Color,color:'black' }} disabled={data.disabled} >
           {data.label}
-        </button>
-        {/* <div className='exigence' style={{display:'none',position:'absolute',width:'1000px',height:'200px',transform:'',backgroundColor:'white',color:'black',zIndex:10000}}>
-          {data.Data}
-        </div> */}
+        </ToggleButton>
         
-      </div>
       <Handle type="source" position='right' isConnectable={isConnectable} />
 
     </>

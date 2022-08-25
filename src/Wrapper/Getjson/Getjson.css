@@ -1,4 +1,18 @@
 .app__getjson{
     width: var(--w);
     margin:0 auto;
+    padding-top:10px;
+}
+.app__insert{
+    max-width: 100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-row-gap:0.5em;
+    grid-column-gap:0.5em;
+    left:0;
+    right:0;
+}
+
+.space{
+    margin-top:5px;
 }
